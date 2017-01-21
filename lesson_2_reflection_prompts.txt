@@ -12,14 +12,33 @@ It is preparation area for the files to be commited. staging area is used to log
 
 How can you use the staging area to make sure you have one commit per logical
 change?
+use the command git diff --staged to compare the file difference between staging area and lastest commit. Also make sure the difference returned is only one logical change
+
+
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+
+branches will be helpful in making side changes from master branch. It later merge to master branch if everything is fine.
+
 How do the diagrams help you visualize the branch structure?
+
+
+It is helps to visualize what are features working on. How much differences are to be merged to the master.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+changes made in branch 2 is merged to master branch. Merged branch commit has reference to both the branches.
+
+
 
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
+
+Pros:
+Saves times
+Elimates errors due to manual intervention
+
+Cons:
+Cannot identify if same line or method is modified and will introduce bugs it this is merged automatically.
